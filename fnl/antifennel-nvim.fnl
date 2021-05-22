@@ -31,9 +31,7 @@
   (antifennel vim.g.antifennel_tmp_path))
 
 (defn convert_selection []
-  (print "heyho")
   (let [(s-start s-end lua-code) (get-selection)
         fennel-code              (str.split (convert_antifennel (str.join "\n" lua-code)) "\n")]
-    (print "hey")
     (vim.api.nvim_buf_set_lines 0 (- s-start 1) s-end false fennel-code)))
 
