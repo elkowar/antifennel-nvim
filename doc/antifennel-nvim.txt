@@ -1,0 +1,15 @@
+*antifennel_nvim* use antifennel directly from your editor
+
+To use antifennel_nvim, you need to have antifennel installed,
+and set the g:antifennel_executable variable to the path of antifennel.
+
+Use `:Aniseed` to convert the current selection into fennel code!
+
+
+*g:antifennel_executable*
+Antifennel executable path ~
+Set the `g:antifennel_executable` variable to the path of your antifennel
+installation.
+
+
+vim:tw=78:sw=2:ts=2:ft=help:norl:et:listchars=
