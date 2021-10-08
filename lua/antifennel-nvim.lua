@@ -106,10 +106,8 @@ do
   do
     local v_0_0
     local function convert_selection0()
-      print("heyho")
       local s_start, s_end, lua_code = get_selection()
       local fennel_code = str.split(convert_antifennel(str.join("\n", lua_code)), "\n")
-      print("hey")
       return vim.api.nvim_buf_set_lines(0, (s_start - 1), s_end, false, fennel_code)
     end
     v_0_0 = convert_selection0
